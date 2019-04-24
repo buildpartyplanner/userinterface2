@@ -1,3 +1,15 @@
+@font-face {
+  font-family: 'Anton';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Anton Regular'), local('Anton-Regular'), url(https://fonts.gstatic.com/s/anton/v10/1Ptgg87LROyAm3Kz-Co.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Oswald';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Oswald Regular'), local('Oswald-Regular'), url(https://fonts.gstatic.com/s/oswald/v17/TK3iWkUHHAIjg752GT8D.ttf) format('truetype');
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -137,7 +149,7 @@ h4,
 h5,
 h6,
 p {
-  font-family: 'Quicksand', sans-serif;
+  font-family: 'Oswald', sans-serif;
 }
 .container {
   font-size: 62.5%;
@@ -149,30 +161,42 @@ p {
   justify-content: space-around;
   width: 100%;
   height: 20%;
+  background: rgba(128, 128, 128, 0.1);
 }
-.container .navBar a {
+.container .navBar .links {
   font-size: 1.2rem;
   color: gray;
   text-decoration: none;
   margin: 3% auto;
 }
-.container .pageLeft {
+.container .mainContent {
+  display: flex;
+  flex-flow: row wrap;
+}
+.container .mainContent .pageLeft {
   width: 50%;
   height: 500px;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
 }
-.container .pageLeft h1 {
+.container .mainContent .pageLeft .headerLeft h1 {
+  font-size: 3.6rem;
+  margin: 0% auto 3% auto;
+}
+.container .mainContent .pageLeft .headerLeft h3 {
   font-size: 2.4rem;
-  margin: 20% auto 5% auto;
+  color: white;
+  margin: 0% auto 3% 20%;
 }
-.container .pageLeft h3 {
-  font-size: 1.4rem;
-  font-style: italic;
-  color: gray;
-}
-.container .pageRight {
+.container .mainContent .pageRight {
   width: 50%;
+}
+.container .mainContent .pageRight .headerRight .headerImg {
+  width: 100%;
+  opacity: 0.9;
+}
+.container .mainContent .pageRight .headerRight .headerImg:hover {
+  opacity: 1;
 }
