@@ -151,42 +151,79 @@ p {
   text-decoration: none;
   margin: 3% auto;
 }
-.mainContent {
+.banner {
   display: flex;
   flex-flow: row wrap;
 }
-.mainContent .pageLeft {
+.banner .headerText {
   width: 50%;
-  height: 500px;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding: 5%;
 }
-.mainContent .pageLeft .headerLeft h1 {
-  font-size: 3.6rem;
-  margin: 0% auto 3% auto;
+.banner .headerText h1 {
+  font-size: 4.8rem;
 }
-.mainContent .pageLeft .headerLeft h3 {
-  font-size: 2.4rem;
+.banner .headerText h3 {
+  font-size: 3.4rem;
   color: white;
-  margin: 0% auto 3% 20%;
 }
-.mainContent .pageRight {
+.banner .headerRight {
   width: 50%;
 }
-.mainContent .pageRight .headerRight .headerImg {
+.banner .headerRight .headerImg {
   width: 100%;
   opacity: 0.9;
 }
-.mainContent .pageRight .headerRight .headerImg:hover {
+.banner .headerRight .headerImg:hover {
   opacity: 1;
 }
-@font-face {
-  font-family: 'Anton';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Anton Regular'), local('Anton-Regular'), url(https://fonts.gstatic.com/s/anton/v10/1Ptgg87LROyAm3Kz-Co.ttf) format('truetype');
+.main {
+  display: flex;
+  flex-flow: row wrap;
+  margin: 5%;
+}
+.main .mainLeft {
+  width: 50%;
+}
+.main .mainLeft .mainPartyImg {
+  width: 80%;
+  height: 80%;
+  margin: 10%;
+  border-radius: 5%;
+  opacity: 0.9;
+}
+.main .mainLeft .mainPartyImg:hover {
+  opacity: 1;
+}
+.main .mainRight {
+  width: 50%;
+}
+.main .mainRight p {
+  font-size: 1.8rem;
+  padding: 10%;
+}
+.main .lowerLeft {
+  width: 50%;
+}
+.main .lowerLeft p {
+  font-size: 1.8rem;
+  padding: 10%;
+}
+.main .lowerRight {
+  width: 50%;
+}
+.main .lowerRight .confettiImg {
+  width: 80%;
+  height: 80%;
+  margin: 10%;
+  border-radius: 5%;
+  opacity: 0.9;
+}
+.main .lowerRight .confettiImg:hover {
+  opacity: 1;
 }
 @font-face {
   font-family: 'Oswald';

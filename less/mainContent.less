@@ -1,53 +1,58 @@
-.mainContent {
+.main {
     display: flex;
     flex-flow: row wrap;
+    margin: 5%;
 
-    .pageLeft {
+    .mainLeft {
         width: 50%;
-        height: 500px;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
+        
 
-        .headerLeft {
-
-            h1 {
-                font-size: 3.6rem;
-                margin: 0% auto 3% auto;
-            }
-
-            h3 {
-                font-size: 2.4rem;
-                color: white;
-                margin: 0% auto 3% 20%;
+        .mainPartyImg {
+            width: 80%;
+            height: 80%;
+            margin: 10%;
+            border-radius: 5%;
+            opacity: 0.9;
+            &:hover {
+                opacity: 1.0;
             }
         }
-        
-        // .mainLeft {
-
-        // }      
     }
 
-    .pageRight {
+    .mainRight {
         width: 50%;
 
-        .headerRight {
+        p {
+            font-size: 1.8rem;
+            padding: 10%;
+        }
+    }
 
-            .headerImg {
-                width: 100%;
-                opacity: 0.9;
-                &:hover {
-                    opacity: 1.0;
-                }
-            }
+    .lowerLeft {
+        width: 50%;
 
+        p {
+            font-size: 1.8rem;
+            padding: 10%;
         }
 
-        // .mainRight {
-
-        // }
-        
     }
+
+    .lowerRight {
+        width: 50%;
+
+        .confettiImg {
+            width: 80%;
+            height: 80%;
+            margin: 10%;
+            border-radius: 5%;
+            opacity: 0.9;
+            &:hover {
+                opacity: 1.0;
+            }
+        }
+
+    }
+
 
 }
