@@ -1,15 +1,3 @@
-@font-face {
-  font-family: 'Anton';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Anton Regular'), local('Anton-Regular'), url(https://fonts.gstatic.com/s/anton/v10/1Ptgg87LROyAm3Kz-Co.ttf) format('truetype');
-}
-@font-face {
-  font-family: 'Oswald';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Oswald Regular'), local('Oswald-Regular'), url(https://fonts.gstatic.com/s/oswald/v17/TK3iWkUHHAIjg752GT8D.ttf) format('truetype');
-}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -138,7 +126,6 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
-/*---------------------------------------------------*/
 * {
   box-sizing: border-box;
 }
@@ -151,29 +138,24 @@ h6,
 p {
   font-family: 'Oswald', sans-serif;
 }
-.container {
-  font-size: 62.5%;
-  background: linear-gradient(to right, #43d9b8 50%, white 50%);
-  max-width: 1400px;
-}
-.container .navBar {
+.navBar {
   display: flex;
   justify-content: space-around;
   width: 100%;
   height: 20%;
   background: rgba(128, 128, 128, 0.1);
 }
-.container .navBar .links {
+.navBar .links {
   font-size: 1.2rem;
   color: gray;
   text-decoration: none;
   margin: 3% auto;
 }
-.container .mainContent {
+.mainContent {
   display: flex;
   flex-flow: row wrap;
 }
-.container .mainContent .pageLeft {
+.mainContent .pageLeft {
   width: 50%;
   height: 500px;
   display: flex;
@@ -181,22 +163,39 @@ p {
   justify-content: center;
   align-items: center;
 }
-.container .mainContent .pageLeft .headerLeft h1 {
+.mainContent .pageLeft .headerLeft h1 {
   font-size: 3.6rem;
   margin: 0% auto 3% auto;
 }
-.container .mainContent .pageLeft .headerLeft h3 {
+.mainContent .pageLeft .headerLeft h3 {
   font-size: 2.4rem;
   color: white;
   margin: 0% auto 3% 20%;
 }
-.container .mainContent .pageRight {
+.mainContent .pageRight {
   width: 50%;
 }
-.container .mainContent .pageRight .headerRight .headerImg {
+.mainContent .pageRight .headerRight .headerImg {
   width: 100%;
   opacity: 0.9;
 }
-.container .mainContent .pageRight .headerRight .headerImg:hover {
+.mainContent .pageRight .headerRight .headerImg:hover {
   opacity: 1;
+}
+@font-face {
+  font-family: 'Anton';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Anton Regular'), local('Anton-Regular'), url(https://fonts.gstatic.com/s/anton/v10/1Ptgg87LROyAm3Kz-Co.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Oswald';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Oswald Regular'), local('Oswald-Regular'), url(https://fonts.gstatic.com/s/oswald/v17/TK3iWkUHHAIjg752GT8D.ttf) format('truetype');
+}
+.container {
+  font-size: 62.5%;
+  background: linear-gradient(to right, #43d9b8 50%, white 50%);
+  max-width: 1400px;
 }
