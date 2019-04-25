@@ -154,6 +154,7 @@ p {
 .banner {
   display: flex;
   flex-flow: row wrap;
+  border-bottom: 5px outset black;
 }
 .banner .headerText {
   width: 50%;
@@ -176,6 +177,7 @@ p {
 .banner .headerRight .headerImg {
   width: 100%;
   opacity: 0.9;
+  border-radius: 5%;
 }
 .banner .headerRight .headerImg:hover {
   opacity: 1;
