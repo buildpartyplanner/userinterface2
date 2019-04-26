@@ -1,0 +1,318 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+* {
+  box-sizing: border-box;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  font-family: 'Oswald', sans-serif;
+}
+.navBar {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  height: 20%;
+  background: rgba(128, 128, 128, 0.1);
+}
+.navBar .links {
+  font-size: 1.2rem;
+  color: gray;
+  text-decoration: none;
+  margin: 3% auto;
+}
+.navBar .links:hover {
+  text-decoration: underline;
+  color: black;
+}
+.banner {
+  display: flex;
+  flex-flow: row wrap;
+  border-bottom: 2rem groove black;
+}
+.banner .headerText {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 5%;
+}
+.banner .headerText h1 {
+  font-size: 4.8rem;
+}
+.banner .headerText h3 {
+  font-size: 3.4rem;
+  color: white;
+}
+.banner .headerRight {
+  width: 50%;
+}
+.banner .headerRight .headerImg {
+  width: 100%;
+  border-radius: 5%;
+  margin-bottom: 2%;
+}
+.main {
+  display: flex;
+  flex-flow: row wrap;
+  margin: 5% 0 5% 0;
+  border-bottom: 2rem groove black;
+}
+.main .mainLeft {
+  width: 50%;
+}
+.main .mainLeft .mainPartyImg {
+  width: 80%;
+  height: 80%;
+  margin: 10%;
+  border-radius: 5%;
+}
+.main .mainRight {
+  width: 50%;
+}
+.main .mainRight p {
+  font-size: 1.8rem;
+  padding: 10%;
+}
+.main .lowerLeft {
+  width: 50%;
+}
+.main .lowerLeft p {
+  font-size: 1.8rem;
+  padding: 10%;
+  margin-top: 5%;
+}
+.main .lowerRight {
+  width: 50%;
+}
+.main .lowerRight .confettiImg {
+  width: 80%;
+  height: 80%;
+  margin: 10%;
+  border-radius: 5%;
+}
+.main .bottomLeft {
+  width: 50%;
+}
+.main .bottomLeft .fireworks {
+  width: 80%;
+  height: 80%;
+  margin: 10%;
+  border-radius: 5%;
+}
+.main .bottomRight {
+  width: 50%;
+}
+.main .bottomRight p {
+  font-size: 1.8rem;
+  padding: 10%;
+}
+.bottomContent {
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+}
+.bottomContent .contactText {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.bottomContent .contactText h3 {
+  font-size: 3rem;
+  margin-bottom: 5%;
+}
+.bottomContent .contactText ul {
+  margin-left: 3%;
+}
+.bottomContent .contactText ul .contactHeader {
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+.bottomContent .contactText ul .contactInfo {
+  font-size: 1.2rem;
+  margin: 10% auto;
+}
+.bottomContent .contactForm {
+  width: 50%;
+  padding: 5%;
+}
+.bottomContent .contactForm .name {
+  min-width: 40%;
+  min-height: 40px;
+  margin: 2%;
+  border-radius: 5%;
+}
+.bottomContent .contactForm .email {
+  min-width: 40%;
+  min-height: 40px;
+  margin: 2%;
+  border-radius: 5%;
+}
+.bottomContent .contactForm .message {
+  min-width: 80%;
+  margin-left: 4%;
+  border-radius: 5%;
+  height: 300px;
+}
+.bottomContent .contactForm button {
+  width: 20%;
+  height: 10%;
+  border-radius: 5%;
+  background: #43d9b8;
+  border: 5px outset white;
+  margin: 5% auto auto 4%;
+}
+.bottomContent .copyright {
+  width: 100%;
+  height: 20%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+.bottomContent .copyright p {
+  font-size: 1.2rem;
+  color: gray;
+}
+@font-face {
+  font-family: 'Oswald';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Oswald Regular'), local('Oswald-Regular'), url(https://fonts.gstatic.com/s/oswald/v17/TK3iWkUHHAIjg752GT8D.ttf) format('truetype');
+}
+.container {
+  font-size: 62.5%;
+  background: linear-gradient(to right, #43d9b8 50%, white 50%);
+  max-width: 1400px;
+}
