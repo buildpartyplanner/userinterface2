@@ -138,6 +138,15 @@ h6,
 p {
   font-family: 'Oswald', sans-serif;
 }
+p {
+  font-size: 1.8rem;
+}
+@media (max-width: 800px) {
+  p {
+    font-size: 1.1rem;
+    line-height: 1.3rem;
+  }
+}
 .navBar {
   display: flex;
   justify-content: space-around;
@@ -150,6 +159,16 @@ p {
   color: gray;
   text-decoration: none;
   margin: 3% auto;
+}
+@media (max-width: 800px) {
+  .navBar .links {
+    font-size: 1rem;
+  }
+}
+@media (max-width: 500px) {
+  .navBar .links {
+    font-size: 0.8rem;
+  }
 }
 .navBar .links:hover {
   text-decoration: underline;
@@ -171,9 +190,19 @@ p {
 .banner .headerText h1 {
   font-size: 4.8rem;
 }
+@media (max-width: 800px) {
+  .banner .headerText h1 {
+    font-size: 3.7rem;
+  }
+}
 .banner .headerText h3 {
   font-size: 3.4rem;
   color: white;
+}
+@media (max-width: 800px) {
+  .banner .headerText h3 {
+    font-size: 2.6rem;
+  }
 }
 .banner .headerRight {
   width: 50%;
@@ -182,6 +211,11 @@ p {
   width: 100%;
   border-radius: 5%;
   margin-bottom: 2%;
+}
+@media (max-width: 800px) {
+  .banner .headerRight .headerImg {
+    margin-top: 15%;
+  }
 }
 .main {
   display: flex;
@@ -198,18 +232,21 @@ p {
   margin: 10%;
   border-radius: 5%;
 }
+@media (max-width: 800px) {
+  .main .mainLeft .mainPartyImg {
+    height: 70%;
+  }
+}
 .main .mainRight {
   width: 50%;
 }
 .main .mainRight p {
-  font-size: 1.8rem;
   padding: 10%;
 }
 .main .lowerLeft {
   width: 50%;
 }
 .main .lowerLeft p {
-  font-size: 1.8rem;
   padding: 10%;
   margin-top: 5%;
 }
@@ -222,6 +259,12 @@ p {
   margin: 10%;
   border-radius: 5%;
 }
+@media (max-width: 800px) {
+  .main .lowerRight .confettiImg {
+    height: 60%;
+    margin-top: 15%;
+  }
+}
 .main .bottomLeft {
   width: 50%;
 }
@@ -231,17 +274,32 @@ p {
   margin: 10%;
   border-radius: 5%;
 }
+@media (max-width: 800px) {
+  .main .bottomLeft .fireworks {
+    height: 70%;
+    margin-top: 11%;
+  }
+}
 .main .bottomRight {
   width: 50%;
 }
 .main .bottomRight p {
-  font-size: 1.8rem;
   padding: 10%;
 }
 .bottomContent {
   width: 100%;
   display: flex;
   flex-flow: row wrap;
+}
+@media (max-width: 800px) {
+  .bottomContent {
+    max-width: 800px;
+  }
+}
+@media (max-width: 500px) {
+  .bottomContent {
+    max-width: 500px;
+  }
 }
 .bottomContent .contactText {
   width: 50%;
@@ -256,13 +314,34 @@ p {
 .bottomContent .contactText ul {
   margin-left: 3%;
 }
+@media (max-width: 800px) {
+  .bottomContent .contactText ul {
+    line-height: 1.5rem;
+  }
+  .bottomContent .contactText ul :nth-child(6) {
+    line-height: 0.5rem;
+  }
+  .bottomContent .contactText ul :nth-child(7) {
+    line-height: 0.5rem;
+  }
+}
 .bottomContent .contactText ul .contactHeader {
   font-size: 1.6rem;
   font-weight: bold;
 }
+@media (max-width: 800px) {
+  .bottomContent .contactText ul .contactHeader {
+    font-size: 1rem;
+  }
+}
 .bottomContent .contactText ul .contactInfo {
   font-size: 1.2rem;
   margin: 10% auto;
+}
+@media (max-width: 800px) {
+  .bottomContent .contactText ul .contactInfo {
+    font-size: 0.9rem;
+  }
 }
 .bottomContent .contactForm {
   width: 50%;
@@ -274,11 +353,21 @@ p {
   margin: 2%;
   border-radius: 5%;
 }
+@media (max-width: 800px) {
+  .bottomContent .contactForm .name {
+    margin-left: 15%;
+  }
+}
 .bottomContent .contactForm .email {
   min-width: 40%;
   min-height: 40px;
   margin: 2%;
   border-radius: 5%;
+}
+@media (max-width: 800px) {
+  .bottomContent .contactForm .email {
+    margin-left: 15%;
+  }
 }
 .bottomContent .contactForm .message {
   min-width: 80%;
@@ -286,13 +375,24 @@ p {
   border-radius: 5%;
   height: 300px;
 }
+@media (max-width: 800px) {
+  .bottomContent .contactForm .message {
+    width: 200px;
+    height: 200px;
+  }
+}
 .bottomContent .contactForm button {
-  width: 20%;
-  height: 10%;
-  border-radius: 5%;
+  width: 25%;
+  height: 40px;
+  border-radius: 25%;
   background: #43d9b8;
   border: 5px outset white;
-  margin: 5% auto auto 4%;
+  margin: 5% auto auto 32%;
+}
+@media (max-width: 800px) {
+  .bottomContent .contactForm button {
+    margin-left: 30%;
+  }
 }
 .bottomContent .copyright {
   width: 100%;
@@ -305,6 +405,11 @@ p {
   font-size: 1.2rem;
   color: gray;
 }
+@media (max-width: 800px) {
+  .bottomContent .copyright p {
+    font-size: 0.8rem;
+  }
+}
 @font-face {
   font-family: 'Oswald';
   font-style: normal;
@@ -315,4 +420,14 @@ p {
   font-size: 62.5%;
   background: linear-gradient(to right, #43d9b8 50%, white 50%);
   max-width: 1400px;
+}
+@media (max-width: 800px) {
+  .container {
+    max-width: 800px;
+  }
+}
+@media (max-width: 500px) {
+  .container {
+    max-width: 500px;
+  }
 }

@@ -5,12 +5,17 @@
     height: 20%;
     background: @nav-bg;
 
-
     .links {
         font-size: 1.2rem;
         color: gray;
         text-decoration: none;
         margin: 3% auto;
+        @media @tablet {
+            font-size: 1.0rem;
+        }
+        @media @mobile {
+            font-size: 0.8rem;
+        }
         &:hover {
             text-decoration: underline;
             color: black;
