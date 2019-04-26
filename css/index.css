@@ -154,7 +154,7 @@ p {
 .banner {
   display: flex;
   flex-flow: row wrap;
-  border-bottom: 5px outset black;
+  border-bottom: 2rem groove black;
 }
 .banner .headerText {
   width: 50%;
@@ -176,11 +176,8 @@ p {
 }
 .banner .headerRight .headerImg {
   width: 100%;
-  opacity: 0.9;
   border-radius: 5%;
-}
-.banner .headerRight .headerImg:hover {
-  opacity: 1;
+  margin-bottom: 2%;
 }
 .main {
   display: flex;
@@ -195,10 +192,6 @@ p {
   height: 80%;
   margin: 10%;
   border-radius: 5%;
-  opacity: 0.9;
-}
-.main .mainLeft .mainPartyImg:hover {
-  opacity: 1;
 }
 .main .mainRight {
   width: 50%;
@@ -222,10 +215,75 @@ p {
   height: 80%;
   margin: 10%;
   border-radius: 5%;
-  opacity: 0.9;
 }
-.main .lowerRight .confettiImg:hover {
-  opacity: 1;
+.main .bottomLeft {
+  width: 50%;
+}
+.main .bottomLeft .fireworks {
+  width: 80%;
+  height: 80%;
+  margin: 10%;
+  border-radius: 5%;
+}
+.main .bottomRight {
+  width: 50%;
+}
+.main .bottomRight p {
+  font-size: 1.8rem;
+  padding: 10%;
+}
+.bottomContent {
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+}
+.bottomContent .contactText {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.bottomContent .contactText h3 {
+  font-size: 3rem;
+  margin-bottom: 5%;
+}
+.bottomContent .contactText ul {
+  margin-left: 3%;
+}
+.bottomContent .contactText ul .contactHeader {
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+.bottomContent .contactText ul .contactInfo {
+  font-size: 1.2rem;
+  margin: 10% auto;
+}
+.bottomContent .contactForm {
+  width: 50%;
+  padding: 5%;
+}
+.bottomContent .contactForm #name {
+  min-width: 40%;
+  min-height: 40px;
+  margin: 2%;
+}
+.bottomContent .contactForm #email {
+  min-width: 40%;
+  min-height: 40px;
+  margin: 2%;
+}
+.bottomContent .contactForm #message {
+  min-width: 80%;
+  min-height: 50%;
+  margin-left: 4%;
+}
+.bottomContent .contactForm button {
+  width: 20%;
+  height: 10%;
+  border-radius: 5%;
+  background: #43d9b8;
+  border: 5px outset white;
+  margin: 5% auto auto 4%;
 }
 @font-face {
   font-family: 'Oswald';
