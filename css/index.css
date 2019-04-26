@@ -151,6 +151,10 @@ p {
   text-decoration: none;
   margin: 3% auto;
 }
+.navBar .links:hover {
+  text-decoration: underline;
+  color: black;
+}
 .banner {
   display: flex;
   flex-flow: row wrap;
@@ -182,7 +186,8 @@ p {
 .main {
   display: flex;
   flex-flow: row wrap;
-  margin: 5%;
+  margin: 5% 0 5% 0;
+  border-bottom: 2rem groove black;
 }
 .main .mainLeft {
   width: 50%;
@@ -206,6 +211,7 @@ p {
 .main .lowerLeft p {
   font-size: 1.8rem;
   padding: 10%;
+  margin-top: 5%;
 }
 .main .lowerRight {
   width: 50%;
@@ -262,20 +268,23 @@ p {
   width: 50%;
   padding: 5%;
 }
-.bottomContent .contactForm #name {
+.bottomContent .contactForm .name {
   min-width: 40%;
   min-height: 40px;
   margin: 2%;
+  border-radius: 5%;
 }
-.bottomContent .contactForm #email {
+.bottomContent .contactForm .email {
   min-width: 40%;
   min-height: 40px;
   margin: 2%;
+  border-radius: 5%;
 }
-.bottomContent .contactForm #message {
+.bottomContent .contactForm .message {
   min-width: 80%;
-  min-height: 50%;
   margin-left: 4%;
+  border-radius: 5%;
+  height: 300px;
 }
 .bottomContent .contactForm button {
   width: 20%;
@@ -284,6 +293,17 @@ p {
   background: #43d9b8;
   border: 5px outset white;
   margin: 5% auto auto 4%;
+}
+.bottomContent .copyright {
+  width: 100%;
+  height: 20%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+.bottomContent .copyright p {
+  font-size: 1.2rem;
+  color: gray;
 }
 @font-face {
   font-family: 'Oswald';

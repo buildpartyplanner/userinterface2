@@ -8,7 +8,6 @@
   <meta name="author" content="SitePoint">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/index.css">
-  <script src="js/scripts.js"></script>
 </head>
 
 <body>
@@ -17,7 +16,7 @@
 
         <nav class="navBar">
             <a href="#" class="links">Home</a>
-            <a href="#" class="links">Login</a>
+            <a href="#" class="links login">Login</a>
             <a href="#" class="links">Gallery</a>
             <a href="#" class="links">Testimonials</a>
         </nav>
@@ -109,19 +108,19 @@
             </div>
 
             <div class="contactForm">
-
-                <form action="action_page.php">
-
-                    <input type="text" id="name" name="name" placeholder="Name">
-                    <input type="text" id="email" name="email" placeholder="Email">
+                <form method="post" action="index.php" autocomplete="off">
+                    <input type="text" class="name" name="name" placeholder="Name">
+                    <input type="text" class="email" name="email" placeholder="Email">
                     <br>
-                    <input type="text" id="message" name="message" placeholder="Your message here">
+                    <textarea rows="20" cols="50" class="message" 
+                    placeholder="Message"></textarea>                    
                     <br>
-
                     <button>Submit</button>
-
                 </form>
 
+            <div class="copyright">
+                <p>©PartyPlanner Inc.</p>
+            </div>
 
             </div>
 
@@ -129,8 +128,8 @@
         </footer>
 
 
-
-    </div>  <!--container -->
         
+    </div>  <!--container -->
+    <script src="js/index.js"></script>
 </body>
 </html>
