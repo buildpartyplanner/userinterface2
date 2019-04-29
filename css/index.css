@@ -147,6 +147,13 @@ p {
     line-height: 1.3rem;
   }
 }
+@media (max-width: 500px) {
+  p {
+    margin: 5% auto 5% 1%;
+    font-size: 1rem;
+    line-height: 1.2rem;
+  }
+}
 .navBar {
   display: flex;
   justify-content: space-around;
@@ -187,12 +194,24 @@ p {
   align-items: center;
   padding: 5%;
 }
+@media (max-width: 500px) {
+  .banner .headerText {
+    flex-direction: row;
+    width: 100%;
+  }
+}
 .banner .headerText h1 {
   font-size: 4.8rem;
 }
 @media (max-width: 800px) {
   .banner .headerText h1 {
     font-size: 3.7rem;
+  }
+}
+@media (max-width: 500px) {
+  .banner .headerText h1 {
+    color: white;
+    margin-left: 5%;
   }
 }
 .banner .headerText h3 {
@@ -202,6 +221,11 @@ p {
 @media (max-width: 800px) {
   .banner .headerText h3 {
     font-size: 2.6rem;
+  }
+}
+@media (max-width: 500px) {
+  .banner .headerText h3 {
+    color: black;
   }
 }
 .banner .headerRight {
@@ -217,14 +241,35 @@ p {
     margin-top: 15%;
   }
 }
+@media (max-width: 500px) {
+  .banner .headerRight .headerImg {
+    width: 180%;
+    margin-top: 0;
+    margin-left: 10%;
+  }
+}
 .main {
   display: flex;
   flex-flow: row wrap;
   margin: 5% 0 5% 0;
   border-bottom: 2rem groove black;
 }
+@media (max-width: 500px) {
+  .main {
+    flex-flow: row wrap;
+    align-items: center;
+  }
+}
 .main .mainLeft {
   width: 50%;
+}
+@media (max-width: 500px) {
+  .main .mainLeft {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    order: 1;
+  }
 }
 .main .mainLeft .mainPartyImg {
   width: 80%;
@@ -237,21 +282,62 @@ p {
     height: 70%;
   }
 }
+@media (max-width: 500px) {
+  .main .mainLeft .mainPartyImg {
+    width: 90%;
+    margin: auto;
+  }
+}
 .main .mainRight {
   width: 50%;
+}
+@media (max-width: 500px) {
+  .main .mainRight {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    order: 2;
+  }
 }
 .main .mainRight p {
   padding: 10%;
 }
+@media (max-width: 500px) {
+  .main .mainRight p {
+    padding: 0;
+  }
+}
 .main .lowerLeft {
   width: 50%;
+}
+@media (max-width: 500px) {
+  .main .lowerLeft {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    order: 4;
+  }
 }
 .main .lowerLeft p {
   padding: 10%;
   margin-top: 5%;
 }
+@media (max-width: 500px) {
+  .main .lowerLeft p {
+    padding: 0;
+    margin: 5% auto 5% 1%;
+  }
+}
 .main .lowerRight {
   width: 50%;
+}
+@media (max-width: 500px) {
+  .main .lowerRight {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    order: 3;
+  }
 }
 .main .lowerRight .confettiImg {
   width: 80%;
@@ -265,8 +351,22 @@ p {
     margin-top: 15%;
   }
 }
+@media (max-width: 500px) {
+  .main .lowerRight .confettiImg {
+    width: 90%;
+    margin: auto;
+  }
+}
 .main .bottomLeft {
   width: 50%;
+}
+@media (max-width: 500px) {
+  .main .bottomLeft {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    order: 5;
+  }
 }
 .main .bottomLeft .fireworks {
   width: 80%;
@@ -280,11 +380,30 @@ p {
     margin-top: 11%;
   }
 }
+@media (max-width: 500px) {
+  .main .bottomLeft .fireworks {
+    width: 90%;
+    margin: auto;
+  }
+}
 .main .bottomRight {
   width: 50%;
 }
+@media (max-width: 500px) {
+  .main .bottomRight {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    order: 6;
+  }
+}
 .main .bottomRight p {
   padding: 10%;
+}
+@media (max-width: 500px) {
+  .main .bottomRight p {
+    padding: 0;
+  }
 }
 .bottomContent {
   width: 100%;
@@ -358,6 +477,11 @@ p {
     margin-left: 15%;
   }
 }
+@media (max-width: 500px) {
+  .bottomContent .contactForm .name {
+    margin-left: 7%;
+  }
+}
 .bottomContent .contactForm .email {
   min-width: 40%;
   min-height: 40px;
@@ -367,6 +491,11 @@ p {
 @media (max-width: 800px) {
   .bottomContent .contactForm .email {
     margin-left: 15%;
+  }
+}
+@media (max-width: 500px) {
+  .bottomContent .contactForm .email {
+    margin-left: 7%;
   }
 }
 .bottomContent .contactForm .message {
@@ -381,6 +510,11 @@ p {
     height: 200px;
   }
 }
+@media (max-width: 500px) {
+  .bottomContent .contactForm .message {
+    margin-left: 0;
+  }
+}
 .bottomContent .contactForm button {
   width: 25%;
   height: 40px;
@@ -392,6 +526,12 @@ p {
 @media (max-width: 800px) {
   .bottomContent .contactForm button {
     margin-left: 30%;
+  }
+}
+@media (max-width: 500px) {
+  .bottomContent .contactForm button {
+    margin-left: 33%;
+    width: 40%;
   }
 }
 .bottomContent .copyright {
@@ -408,6 +548,12 @@ p {
 @media (max-width: 800px) {
   .bottomContent .copyright p {
     font-size: 0.8rem;
+  }
+}
+@media (max-width: 500px) {
+  .bottomContent .copyright p {
+    font-size: 0.7rem;
+    margin-left: 55%;
   }
 }
 @font-face {
