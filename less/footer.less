@@ -2,6 +2,12 @@
     width: 100%;
     display: flex;
     flex-flow: row wrap;
+    @media @tablet {
+        max-width: 800px;
+    }
+    @media @mobile {
+        max-width: 500px;
+    }
 
     .contactText {
         width: 50%;
@@ -15,15 +21,30 @@
 
         ul {
             margin-left: 3%;
+            @media @tablet {
+                line-height: 1.5rem;
+                :nth-child(6) {
+                    line-height: 0.5rem;
+                }
+                :nth-child(7) {
+                    line-height: 0.5rem;
+                }
+            }
             
             .contactHeader {
                 font-size: 1.6rem;
                 font-weight: bold;
+                @media @tablet {
+                    font-size: 1rem;
+                }
             }
 
             .contactInfo {
                 font-size: 1.2rem;
                 margin: 10% auto;
+                @media @tablet {
+                    font-size: 0.9rem;
+                }
             }
         }
     }
@@ -37,6 +58,12 @@
             min-height: 40px;
             margin: 2%;
             border-radius: 5%;
+            @media @tablet {
+                margin-left: 15%;
+            }
+            @media @mobile {
+                margin-left: 7%;
+            }
         }
 
         .email {
@@ -44,6 +71,12 @@
             min-height: 40px;
             margin: 2%;
             border-radius: 5%;
+            @media @tablet {
+                margin-left: 15%;
+            }
+            @media @mobile {
+                margin-left: 7%;
+            }
         }
 
         .message {
@@ -51,15 +84,29 @@
             margin-left: 4%;
             border-radius: 5%;
             height: 300px;
+            @media @tablet {
+                width: 200px;
+                height: 200px;
+            }
+            @media @mobile {
+                margin-left: 0;
+            }
         }
 
         button {
-            width: 20%;
-            height: 10%;
-            border-radius: 5%;
+            width: 25%;
+            height: 40px;
+            border-radius: 25%;
             background: @button-color;
             border: 5px outset white;
-            margin: 5% auto auto 4%;
+            margin: 5% auto auto 32%;
+            @media @tablet {
+                margin-left: 30%;
+            }
+            @media @mobile {
+                margin-left: 33%;
+                width: 40%;
+            }
         }
 
     }
@@ -74,7 +121,14 @@
         p {
             font-size: 1.2rem;
             color: gray;
+            @media @tablet {
+                font-size: 0.8rem;
+            }
+            @media @mobile {
+                font-size: 0.7rem;
+                margin-left: 55%;
+            }
         }
     }
-    
+
 }

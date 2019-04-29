@@ -3,9 +3,19 @@
     flex-flow: row wrap;
     margin: 5% 0 5% 0;
     border-bottom: 2rem groove @banner-border;
+    @media @mobile {
+        flex-flow: row wrap;
+        align-items: center;
+    }
 
     .mainLeft {
         width: 50%;
+        @media @mobile {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            order: 1;
+        }
         
 
         .mainPartyImg {
@@ -13,59 +23,119 @@
             height: 80%;
             margin: 10%;
             border-radius: 5%;
+            @media @tablet {
+                height: 70%;
+            }
+            @media @mobile {
+                width: 90%;
+                margin: auto;
+            }
         }
     }
 
     .mainRight {
         width: 50%;
+        @media @mobile {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            order: 2;
+        }
 
         p {
-            font-size: 1.8rem;
             padding: 10%;
+            @media @mobile {
+                padding: 0;
+            } 
         }
     }
 
     .lowerLeft {
         width: 50%;
+        @media @mobile {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            order: 4;
+        }
 
         p {
-            font-size: 1.8rem;
             padding: 10%;
             margin-top: 5%;
+            @media @mobile {
+                padding: 0;
+                margin: 5% auto 5% 1%;
+            }
         }
 
     }
 
     .lowerRight {
         width: 50%;
+        @media @mobile {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            order: 3;
+        }
 
         .confettiImg {
             width: 80%;
             height: 80%;
             margin: 10%;
             border-radius: 5%;
+            @media @tablet {
+                height: 60%;
+                margin-top: 15%;
+            }
+            @media @mobile {
+                width: 90%;
+                margin: auto;
+            }
         }
 
     }
 
     .bottomLeft {
         width: 50%;
+        @media @mobile {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            order: 5;
+        }
 
         .fireworks {
             width: 80%;
             height: 80%;
             margin: 10%;
             border-radius: 5%;
+            @media @tablet {
+                height: 70%;
+                margin-top: 11%;
+            }
+            @media @mobile {
+                width: 90%;
+                margin: auto;
+            }
         }
 
     }
 
     .bottomRight {
         width: 50%;
+        @media @mobile {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            order: 6;
+        }
 
         p {
-            font-size: 1.8rem;
             padding: 10%;
+            @media @mobile {
+                padding: 0;
+            }
         }
 
     }

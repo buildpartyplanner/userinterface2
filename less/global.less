@@ -6,3 +6,16 @@
 h1, h2, h3, h4, h5, h6, p {
     font-family: 'Oswald', sans-serif;
 }
+
+p {
+    font-size: 1.8rem;
+    @media @tablet {
+        font-size: 1.1rem;
+        line-height: 1.3rem;
+    }
+    @media @mobile {
+        margin: 5% auto 5% 1%;
+        font-size: 1rem;
+        line-height: 1.2rem;
+    }
+}
