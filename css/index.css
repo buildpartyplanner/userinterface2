@@ -253,7 +253,7 @@ p {
 }
 .galleryDiv {
   width: 70%;
-  height: 500px;
+  height: 31rem;
   opacity: 0.8;
   background: black;
   border-radius: 5%;
@@ -263,9 +263,23 @@ p {
   justify-content: space-between;
   align-items: center;
 }
+@media (max-width: 800px) {
+  .galleryDiv {
+    width: 82%;
+    height: 70%;
+    margin: 6% auto 5% 10%;
+  }
+}
+@media (max-width: 500px) {
+  .galleryDiv {
+    width: 90%;
+    height: 65%;
+    margin: 8% auto 0% 5%;
+  }
+}
 .galleryDiv .galleryButtons {
-  width: 50px;
-  height: 50px;
+  width: 6%;
+  height: 11%;
   background: gray;
   font-weight: bolder;
   margin: 3%;
@@ -273,7 +287,19 @@ p {
   opacity: 0.9;
   cursor: pointer;
   border-radius: 5%;
-  border: 5px outset whitesmoke;
+  border: 0.3rem outset whitesmoke;
+}
+@media (max-width: 800px) {
+  .galleryDiv .galleryButtons {
+    width: 7%;
+    height: 10%;
+    font-size: 1.6rem;
+  }
+}
+@media (max-width: 500px) {
+  .galleryDiv .galleryButtons {
+    font-size: 0.8rem;
+  }
 }
 .container {
   display: block;
@@ -550,7 +576,7 @@ p {
   height: 40px;
   border-radius: 25%;
   background: #43d9b8;
-  border: 5px outset white;
+  border: 0.3rem outset white;
   margin: 5% auto auto 32%;
 }
 @media (max-width: 800px) {
