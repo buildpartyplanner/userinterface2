@@ -154,6 +154,9 @@ p {
     line-height: 1.2rem;
   }
 }
+.rounded-borders {
+  border-radius: 5%;
+}
 .navBar {
   display: flex;
   justify-content: space-around;
@@ -248,160 +251,187 @@ p {
     margin-left: 10%;
   }
 }
-.main {
+.galleryDiv {
+  width: 70%;
+  height: 500px;
+  opacity: 0.8;
+  background: black;
+  border-radius: 5%;
+  position: fixed;
+  margin: 6% auto 5% 15%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.galleryDiv .galleryButtons {
+  width: 50px;
+  height: 50px;
+  background: gray;
+  font-weight: bolder;
+  margin: 3%;
+  font-size: 2.4rem;
+  opacity: 0.9;
+  cursor: pointer;
+  border-radius: 5%;
+  border: 5px outset whitesmoke;
+}
+.container {
+  display: block;
+}
+.container .main {
   display: flex;
   flex-flow: row wrap;
   margin: 5% 0 5% 0;
   border-bottom: 2rem groove black;
 }
 @media (max-width: 500px) {
-  .main {
+  .container .main {
     flex-flow: row wrap;
     align-items: center;
   }
 }
-.main .mainLeft {
+.container .main .mainLeft {
   width: 50%;
 }
 @media (max-width: 500px) {
-  .main .mainLeft {
+  .container .main .mainLeft {
     width: 100%;
     display: flex;
     justify-content: center;
     order: 1;
   }
 }
-.main .mainLeft .mainPartyImg {
+.container .main .mainLeft .mainPartyImg {
   width: 80%;
   height: 80%;
   margin: 10%;
   border-radius: 5%;
 }
 @media (max-width: 800px) {
-  .main .mainLeft .mainPartyImg {
+  .container .main .mainLeft .mainPartyImg {
     height: 70%;
   }
 }
 @media (max-width: 500px) {
-  .main .mainLeft .mainPartyImg {
+  .container .main .mainLeft .mainPartyImg {
     width: 90%;
     margin: auto;
   }
 }
-.main .mainRight {
+.container .main .mainRight {
   width: 50%;
 }
 @media (max-width: 500px) {
-  .main .mainRight {
+  .container .main .mainRight {
     width: 100%;
     display: flex;
     justify-content: center;
     order: 2;
   }
 }
-.main .mainRight p {
+.container .main .mainRight p {
   padding: 10%;
 }
 @media (max-width: 500px) {
-  .main .mainRight p {
+  .container .main .mainRight p {
     padding: 0;
   }
 }
-.main .lowerLeft {
+.container .main .lowerLeft {
   width: 50%;
 }
 @media (max-width: 500px) {
-  .main .lowerLeft {
+  .container .main .lowerLeft {
     width: 100%;
     display: flex;
     justify-content: center;
     order: 4;
   }
 }
-.main .lowerLeft p {
+.container .main .lowerLeft p {
   padding: 10%;
   margin-top: 5%;
 }
 @media (max-width: 500px) {
-  .main .lowerLeft p {
+  .container .main .lowerLeft p {
     padding: 0;
     margin: 5% auto 5% 1%;
   }
 }
-.main .lowerRight {
+.container .main .lowerRight {
   width: 50%;
 }
 @media (max-width: 500px) {
-  .main .lowerRight {
+  .container .main .lowerRight {
     width: 100%;
     display: flex;
     justify-content: center;
     order: 3;
   }
 }
-.main .lowerRight .confettiImg {
+.container .main .lowerRight .confettiImg {
   width: 80%;
   height: 80%;
   margin: 10%;
   border-radius: 5%;
 }
 @media (max-width: 800px) {
-  .main .lowerRight .confettiImg {
+  .container .main .lowerRight .confettiImg {
     height: 60%;
     margin-top: 15%;
   }
 }
 @media (max-width: 500px) {
-  .main .lowerRight .confettiImg {
+  .container .main .lowerRight .confettiImg {
     width: 90%;
     margin: auto;
   }
 }
-.main .bottomLeft {
+.container .main .bottomLeft {
   width: 50%;
 }
 @media (max-width: 500px) {
-  .main .bottomLeft {
+  .container .main .bottomLeft {
     width: 100%;
     display: flex;
     justify-content: center;
     order: 5;
   }
 }
-.main .bottomLeft .fireworks {
+.container .main .bottomLeft .fireworks {
   width: 80%;
   height: 80%;
   margin: 10%;
   border-radius: 5%;
 }
 @media (max-width: 800px) {
-  .main .bottomLeft .fireworks {
+  .container .main .bottomLeft .fireworks {
     height: 70%;
     margin-top: 11%;
   }
 }
 @media (max-width: 500px) {
-  .main .bottomLeft .fireworks {
+  .container .main .bottomLeft .fireworks {
     width: 90%;
     margin: auto;
   }
 }
-.main .bottomRight {
+.container .main .bottomRight {
   width: 50%;
 }
 @media (max-width: 500px) {
-  .main .bottomRight {
+  .container .main .bottomRight {
     width: 100%;
     display: flex;
     justify-content: center;
     order: 6;
   }
 }
-.main .bottomRight p {
+.container .main .bottomRight p {
   padding: 10%;
 }
 @media (max-width: 500px) {
-  .main .bottomRight p {
+  .container .main .bottomRight p {
     padding: 0;
   }
 }
