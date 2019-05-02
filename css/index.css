@@ -252,13 +252,13 @@ p {
   }
 }
 .galleryDiv {
-  width: 70%;
+  width: 90%;
   height: 31rem;
   opacity: 0.8;
   background: black;
   border-radius: 5%;
   position: fixed;
-  margin: 6% auto 5% 15%;
+  margin: 7% auto 5% 5%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -303,6 +303,9 @@ p {
 }
 .container {
   display: block;
+}
+.container .carousel {
+  display: none;
 }
 .container .main {
   display: flex;
