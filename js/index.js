@@ -34,10 +34,3 @@ galleryLink.addEventListener('click', (event) => {
 containerDiv.addEventListener('click', () => {
     bodyDiv.removeChild(gallery);
 });
-
-//click to gallery buttons, preventing propagation to the body:
-galleryButtons.forEach(addEventListener('click', (event) => {
-    event.stopPropagation(containerDiv);  
-}));
-
-//image carousel:
