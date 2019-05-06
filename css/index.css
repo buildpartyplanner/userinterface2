@@ -615,7 +615,11 @@ p {
 }
 .bottomContent .contactForm {
   width: 50%;
-  padding: 5%;
+}
+@media (max-width: 500px) {
+  .bottomContent .contactForm {
+    padding-left: 2%;
+  }
 }
 .bottomContent .contactForm .name {
   min-width: 40%;
