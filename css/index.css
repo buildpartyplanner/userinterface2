@@ -260,8 +260,10 @@ p {
   position: fixed;
   margin: 7% auto 5% 5%;
   display: flex;
+  flex-flow: row wrap;
   justify-content: space-between;
   align-items: center;
+  padding: 1%;
 }
 @media (max-width: 800px) {
   .galleryDiv {
@@ -301,11 +303,98 @@ p {
     font-size: 0.8rem;
   }
 }
+.teamDiv {
+  width: 90%;
+  height: 31rem;
+  opacity: 0.8;
+  background: whitesmoke;
+  border-radius: 5%;
+  position: fixed;
+  margin: 7% auto 5% 5%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-items: center;
+  padding: 1%;
+}
+@media (max-width: 800px) {
+  .teamDiv {
+    justify-content: flex-start;
+    align-items: stretch;
+    width: 94%;
+    height: 90%;
+    margin: 6% auto 0% 3%;
+  }
+}
+@media (max-width: 500px) {
+  .teamDiv {
+    width: 90%;
+    height: 91%;
+    margin: 8% auto 0% 5%;
+  }
+  .teamDiv :nth-child(8) {
+    margin-left: 25%;
+    margin-right: 10%;
+  }
+}
+.dev-team {
+  background: white;
+  border-radius: 5%;
+  padding: 1%;
+}
+.dev-team:hover {
+  background: black;
+  color: white;
+}
+@media (max-width: 800px) {
+  .dev-team {
+    width: 4rem;
+    height: 4rem;
+    padding: 1rem;
+    margin: 12% 4% 0 0;
+  }
+}
+@media (max-width: 500px) {
+  .dev-team {
+    padding: 0;
+    font-size: 0.4rem;
+    margin: 2% 4% 0 0;
+  }
+}
+.dev-team .dev-img {
+  width: 8rem;
+  height: 8rem;
+  padding: 0.3rem;
+}
+@media (max-width: 800px) {
+  .dev-team .dev-img {
+    width: 5rem;
+    height: 5rem;
+    padding: 0.3rem;
+  }
+}
+.dev-team .dev-text {
+  font-size: 1rem;
+  margin-bottom: 10%;
+}
+.dev-team .github-link {
+  text-decoration: none;
+  color: black;
+  width: 30px;
+  height: auto;
+  margin: 0;
+}
+.dev-team .github-link:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
 .container {
   display: block;
 }
-.container .carousel {
-  display: none;
+.container .topDiv {
+  width: 100%;
+  height: 300px;
+  background: white;
 }
 .container .main {
   display: flex;
