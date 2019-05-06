@@ -1,15 +1,17 @@
+//NavBar constructor:
 function Navbar(obj) {
     this.class = obj.class;
     this.text = obj.text;
 }
 
+//myNavBar with appropriate text for links:
 const myNavBar = new Navbar({
     class: 'links',
-    text: ['Home', 'Team', 'Login', 'Gallery']
+    text: ['Home', 'Team', 'Login', 'Contact Us']
 });
 
 
-//Building navbar as objects per MVP:
+//Building navbar as objects to fulfill MVP:
 const navLinks = document.querySelectorAll('a');
 navLinks.forEach(link => link.classList.add(myNavBar.class));
 navLinks[0].textContent = myNavBar.text[0];
@@ -19,7 +21,6 @@ navLinks[3].textContent = myNavBar.text[3];
 
 
 //Dev Team construction for pop-up div (teamDiv):
-
 class DevTeam {
     constructor(devObj) {
         this.devObj = devObj;
@@ -46,6 +47,7 @@ class DevTeam {
     }
 }
 
+//DevTeam class objects:
 const jakeDev = new DevTeam({
     imgSrc: 'https://avatars1.githubusercontent.com/u/47545988?s=460&v=4',
     innerText: 'Jake Anderson:<br>Web UI Developer',
@@ -89,57 +91,30 @@ const jeffDev = new DevTeam({
 });
 
 
+//establishes team of developers as DevTeam class objects:
 const devTeam = [jakeDev, arthurDev, ihabDev, jimDev, tonyDev, jonDev, jeffDev];
-
 
 //body selection:
 const bodyDiv = document.querySelector('body');
 
 //popUpDiv:
 const popUpDiv = document.createElement('div');
-popUpDiv.classList.add('galleryDiv');
-
-//gallery left button:
-var galleryLeft = document.createElement('button');
-galleryLeft.classList.add('galleryButtons');
-galleryLeft.classList.add('left-button');
-galleryLeft.textContent = '<';
-popUpDiv.appendChild(galleryLeft);
-
-//gallery right button:
-var galleryRight = document.createElement('button');
-galleryRight.classList.add('galleryButtons');
-galleryRight.classList.add('right-button');
-galleryRight.textContent = '>';
-popUpDiv.appendChild(galleryRight);
 
 //container selection:
 const containerDiv = document.querySelector('.container');
+
 //gallery link selection (nav):
-const galleryLink = navLinks[3];
-
-
-
-//team page div:
-const teamTopDiv = document.createElement('div');
-teamTopDiv.classList.add('topDiv');
-
-
-
+const contactUs = navLinks[3];
 
 //team link in navigation:
 const teamLink = navLinks[1];
 teamLink.addEventListener('click', (event) => {
     event.stopPropagation(containerDiv);
-    if (popUpDiv.classList.contains('galleryDiv') === true) {
-        popUpDiv.classList.toggle('galleryDiv');
-    }
+
     if (popUpDiv.classList.contains('teamDiv') === false) {
         popUpDiv.classList.toggle('teamDiv');
     }
     devTeam.forEach(dev => popUpDiv.appendChild(dev.devDiv));
-    galleryLeft.style.display = 'none';
-    galleryRight.style.display = 'none';
     bodyDiv.prepend(popUpDiv);
 });
 
@@ -153,26 +128,12 @@ homeLink.addEventListener('click', () => {
 });
 
 //click to gallery link in nav, prepends pop-up gallery div:
-galleryLink.addEventListener('click', (event) => {
+contactUs.addEventListener('click', (event) => {
     event.stopPropagation(containerDiv);
-    if (bodyDiv.contains(popUpDiv) === false) {
-        bodyDiv.prepend(popUpDiv);
-    }
-    if (popUpDiv.classList.contains('teamDiv') === true) {
-        popUpDiv.classList.remove('teamDiv');
-    }
-    if (popUpDiv.classList.contains('galleryDiv') === false) {
-        popUpDiv.classList.add('galleryDiv');
-        galleryLeft.style.display = 'flex';
-        galleryRight.style.display = 'flex';
-    }
-    if (popUpDiv.classList.contains('galleryDiv') === true) {
-        popUpDiv.classList.remove('galleryDiv');
-        galleryLeft.style.display = 'none';
-        galleryRight.style.display = 'none';
-        bodyDiv.removeChild(popUpDiv);
-    }
-    
+    window.scrollTo({
+        top: 2100,
+        behavior: 'smooth'
+      });
 });
 
 //general click to the body, removes pop-up gallery div:

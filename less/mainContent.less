@@ -32,7 +32,7 @@
         opacity: 0.9;
         cursor: pointer;
         .rounded-borders;
-        border: .3rem outset whitesmoke;
+        border: .3rem outset @ws;
         @media @tablet {
             width: 7%;
             height: 10%;
@@ -48,8 +48,8 @@
 .teamDiv {
     width: 90%;
     height: 31rem;
-    opacity: 0.8;
-    background: whitesmoke;
+    opacity: 0.9;
+    background: @ws;
     .rounded-borders;
     position: fixed;
     margin: 7% auto 5% 5%;
@@ -78,18 +78,21 @@
 
 .dev-team {
     // border: 1px solid red;
-    background: white;
     .rounded-borders;
     padding: 1%;
     &:hover {
         background: black;
-        color: white;
+        color: @ws;
     }
     @media @tablet {
         width: 4rem;
         height: 4rem;
         padding: 1rem;
-        margin: 12% 4% 0 0;
+        margin: 15% 2% 0 2%;
+        &:hover {
+            background: none;
+            color: black;
+        }
     }
     @media @mobile {
         padding: 0;
@@ -133,7 +136,7 @@
     .topDiv {
         width: 100%;
         height: 300px;
-        background: white;
+        background: @ws;
     }
 
     .main {
